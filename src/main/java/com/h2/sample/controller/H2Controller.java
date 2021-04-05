@@ -14,7 +14,8 @@ public class H2Controller {
 
 	@Autowired
 	InsertDataService service;
-
+// inserting details in h2-database
+	
 	@GetMapping("/{name}")
 	public String insertDate(@PathVariable("name") String name) {
 		return service.insertData(name);
